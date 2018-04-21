@@ -1,0 +1,39 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<h3>{{title}}</h3>
+<table class="table">
+	<thead-dark>
+	    <tr>
+	      <th scope="col">Id</th>
+	      <th scope="col">Name</th>
+	      <th scope="col">Type</th>
+	      <th scope="col">City</th>
+	      <th scope="col">Rating</th>
+	      <th scope="col">Price</th>
+	      <th scope="col">Address</th>
+	      <th scope="col">Review</th>
+	    </tr>
+  	</thead>
+  	<tbody>
+	{% for obj in entries %}
+	    <tr>
+	      <th scope="row">{{entries.index(obj)}}</th>
+	      <td>{{obj.name}}</td>
+	      <td>{{obj.type}}</td>
+	      <td>{{obj.city}}</td>
+	      <td>{{obj.rating}}</td>
+	      <td>{{obj.price}}</td>
+	      <td>{{obj.address}}</td>
+	      <td><a href="/review?name={{obj.name}}">reviews</a></td>
+	    </tr>
+	{% endfor %}
+	</tbody>
+</table>
+
+<p><a href="/show_loc">Show restaurants in map</a></p>
+<p><a href="/show_top_rating">Show top rated restaurant</a></p>
+<p><a href="/rate_dist">Show rate distribution</a></p>
+<p><a href="/price_dist">Show price distribution</a></p>
+
+<p><a href="/logout"><button>New Search</button></a></p>
