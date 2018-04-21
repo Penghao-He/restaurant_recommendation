@@ -24,7 +24,7 @@ Before running the app, users need to create a virtual environment and install t
 $ pip install -r requirements.txt
 <br>
 And the required packages are listed in "requirements.txt" <br>
-<strong>Users are required to log in a poorly account before using the app.</strong><br>
+<strong>USERS ARE REQUIRED TO LOG IN A PLOTLY ACCOUNT BEFORE USING THE APP.</strong><br>
 <br>
 [How to run the app]<br>
 After installing the app, users can run the app like this:<br>
